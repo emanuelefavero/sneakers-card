@@ -1,6 +1,6 @@
 # Sneakers Card
 
-This is just a css card for sneakers. It's a simple card with a nice hover effect.
+This is just a nice responsive, animated CSS card for selling merchandise. It's a simple card with a nice hover effect.
 
 ## Demo
 
