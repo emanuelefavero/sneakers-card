@@ -13,3 +13,7 @@ This is just a css card for sneakers. It's a simple card with a nice hover effec
 ## Test locally
 
 Clone the repo and open the index.html file in your browser.
+
+## License
+
+- [MIT](LICENSE)
