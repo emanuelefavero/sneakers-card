@@ -3,14 +3,18 @@
 
 /* Define Color Gradient Custom Properties */
 :root {
-    --main-gradient: linear-gradient(to bottom, rgb(231, 34, 238), rgb(248, 123, 165));
+  --main-gradient: linear-gradient(
+    to bottom,
+    rgb(231, 34, 238),
+    rgb(248, 123, 165)
+  );
 }
 
 /* Basic Styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 input,
@@ -22,129 +26,133 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
 }
 
 /* Main Font */
 body {
-    font-family: 'Poppins', sans-serif;
-
+  font-family: 'Poppins', sans-serif;
 }
 
 /* SNEAKERS CARD BACKGROUND */
 .sneakers-card-bg {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(227, 232, 241);
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(227, 232, 241);
+  overflow: hidden;
 }
 
 .sneakers-card-bg::before {
-    content: "";
-    position: absolute;
-    bottom: -50%;
-    width: 200%;
-    height: 100vh;
-    background: var(--main-gradient);
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
-    transform: rotate(-12deg);
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  width: 200%;
+  height: 100vh;
+  background: var(--main-gradient);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+  transform: rotate(-12deg);
 }
 
 /* SNEAKERS CARD */
 .sneakers-card {
-    width: 375px;
-    height: 375px;
-    background: var(--main-gradient);
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.212);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    overflow: hidden;
+  width: 375px;
+  height: 375px;
+  background: var(--main-gradient);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.212);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  overflow: hidden;
+  transition: 0.2s;
 }
 
 .sneakers-card .sneakers-image {
-    position: relative;
-    width: 70%;
-    height: 100%;
-    background: url(./images/ultra-boost.png);
-    background-image: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: .2s;
+  position: relative;
+  width: 70%;
+  height: 100%;
+  background: url(./images/ultra-boost.png);
+  background-image: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s;
 }
 
 .sneakers-card .sneakers-text {
-    position: relative;
-    text-align: left;
-    color: #fff;
+  position: relative;
+  text-align: left;
+  color: #fff;
 }
 
 .sneakers-card h3 {
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    padding-bottom: .2rem;
-    transition: .2s;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding-bottom: 0.2rem;
+  transition: 0.2s;
 }
 
 .sneakers-card p {
-    font-size: .875rem;
-    padding-bottom: .875rem;
-    color: rgba(255, 255, 255, 0.65);
-    transition: .2s;
+  font-size: 0.875rem;
+  padding-bottom: 0.875rem;
+  color: rgba(255, 255, 255, 0.65);
+  transition: 0.2s;
 }
 
 .sneakers-card button {
-    padding: 0;
-    border: none;
-    background: rgb(238, 241, 243);
-    color: rgba(12, 13, 24, 0.7);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    font-size: .875rem;
-    font-weight: 600;
-    padding: .437rem .875rem;
-    transition: .2s;
-    cursor: pointer;
+  padding: 0;
+  border: none;
+  background: rgb(238, 241, 243);
+  color: rgba(12, 13, 24, 0.7);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.437rem 0.875rem;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 /* Sneakers Card Hover Animations */
+.sneakers-card:hover {
+  transform: rotate(-2deg);
+  transition: 0.5s;
+}
 .sneakers-card:hover .sneakers-text p {
-    transform: translateX(-370px);
-    opacity: 0;
-    transition: .6s;
+  transform: translateX(-370px);
+  opacity: 0;
+  transition: 0.6s;
 }
 
 .sneakers-card:hover .sneakers-image {
-    transform: scale(1.4);
-    transition: .5s;
+  transform: scale(1.4);
+  transition: 0.5s;
 }
 
 .sneakers-card:hover .sneakers-text h3 {
-    transform: translateY(2rem);
-    transition: .4s;
+  transform: translateY(2rem);
+  transition: 0.4s;
 }
 
 .sneakers-card:hover button {
-    transform: scale(1.4) translate(8px, -2px);
-    transition: .3s;
+  transform: scale(1.4) translate(8px, -2px);
+  transition: 0.3s;
 }
 
 .sneakers-card button:hover {
-    background: rgba(238, 241, 243, 0.7);
+  background: rgba(238, 241, 243, 0.9);
 }
 
 /* Sneakers Card Button Active Animation */
 .sneakers-card button:active {
-    background: rgba(12, 14, 22, 0.808);
-    color: #fff;
+  background: rgba(12, 14, 22, 0.808);
+  color: #fff;
 }
