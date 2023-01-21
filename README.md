@@ -16,4 +16,4 @@ Clone the repo and open the index.html file in your browser.
 
 ## License
 
-- [MIT](LICENSE)
+- [MIT](LICENSE.md)
